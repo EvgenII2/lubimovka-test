@@ -1,0 +1,90 @@
+.form-search {
+    background-color: #ecebe8;
+    font-family: 'Neue Machina', Courier, monospace;
+    padding-top: 189px;
+    padding-left: 118px;
+    min-height: 1022px;
+    color: #242424;
+}
+
+.form-search__title {
+    margin: 0;
+    padding: 0;
+    font-size: 56px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 81px;
+}
+
+.form-search__input-and-button-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 66px;
+}
+
+.form-search__input {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Formular', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.278;
+    border: none;
+    background: none;
+    border-bottom: solid 1px #242424;
+    min-width: 387px;
+    height: 32px;
+}
+
+.form-search__input:focus {
+    outline: none;
+    background-color: #ecebe8;
+}
+
+.form-search__button {
+    padding: 0;
+    width: 120px;
+    height: 32px;
+    background: none;
+    border: none;
+    border-left: solid 1px #242424;
+    border-bottom: solid 1px #242424;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: linear-gradient(to left, transparent, transparent 50%, #242424 50%, #242424);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+
+.form-search__button-image {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/icon-right-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: 21px 13px;
+    background-position: left center;
+}
+
+.form-search__button-image_alt {
+    background-image: url('../../images/icon-right-arrow-alt.svg');
+}
+
+.form-search__button-text {
+    font-family: 'Formular', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.375;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.form-search__button:hover {
+    background-position: 0 0;
+    color: #ecebe8;
+}
+
+.form-search__button:active {
+    transition: box-shadow .1s ease-in;
+    box-shadow: 0 0 0 5px #242424;
+}
