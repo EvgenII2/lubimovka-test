@@ -1,9 +1,16 @@
-.form-search {
-    background-color: #ecebe8;
-    font-family: 'Neue Machina', Courier, monospace;
+.section-search {
     padding-top: 189px;
     padding-left: 118px;
-    min-height: 1022px;
+    background-color: #ecebe8;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-search {
+    font-family: 'Neue Machina', Courier, monospace;
     color: #242424;
 }
 

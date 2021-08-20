@@ -7,7 +7,6 @@ class Search {
 
     getSearchResult(searchFunction) {
         const arr = Array.from(this.data.result);
-        // console.log(arr);
         return searchFunction(arr);
     }
 }

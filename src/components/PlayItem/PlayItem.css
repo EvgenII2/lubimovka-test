@@ -1,0 +1,21 @@
+.play {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.play__title-container {
+    height: 300px;
+    width: 240px;
+    background-color: #B7C09D;
+    padding: 24px 31px 0 24px;
+}
+
+.play__title {}
+
+.play__lastname {}
+
+.play__firstname {}
+
+.play__year {}
