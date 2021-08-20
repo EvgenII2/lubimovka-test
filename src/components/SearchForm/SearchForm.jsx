@@ -14,27 +14,27 @@ function SearchForm(props) {
 
     const ref = React.useRef("");
 
-    const setState = () => {
-        setRequery(ref.current.value);
-        const tmpPlays = (arr) => {
+    React.useEffect(() => {
+        const tmpPlays = search.getSearchResult((arr) => {
             return arr.filter(item =>
                 item.title.toLowerCase().includes(requery.toLowerCase()))
-        };
-        setPlayList(search.getSearchResult(tmpPlays));
-        const tmpAuthors = (arr) => {
+        });
+        setPlayList(tmpPlays);
+        const tmpAuthors = search.getSearchResult((arr) => {
             return arr.filter(item =>
                 item.author_lastName.toLowerCase().includes(requery.toLowerCase()))
-        };
-        setAuthorList(search.getSearchResult(tmpAuthors));
+        });
+        console.log(tmpAuthors)
+        console.log(tmpPlays)
+        setAuthorList(tmpAuthors)
 
-        if (playList.length > 0) setFormTitle(`${requery} +`);
+        if (tmpAuthors.length > 0) setFormTitle(`${requery} +`);
         else setFormTitle(`${requery} -`);
-    }
+    }, [requery])
 
     function handleSubmit(event) {
         event.preventDefault();
-        setState();
-
+        setRequery(requery);
     }
 
     return (
