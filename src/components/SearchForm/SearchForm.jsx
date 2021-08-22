@@ -44,15 +44,15 @@ function SearchForm(props) {
                 <h2 className="form-search__title">{formTitle}</h2>
                 <div className="form-search__input-and-button-container">
                     <input type="text" ref={ref} name="inputFromFormSearch" id="inputFromFormSearch" className="form-search__input" required minLength="1" maxLength="40" placeholder="Запрос" />
-                    {/* <button type="submit" className="form-search__button" onMouseOver={() => setIsButtonIconBlack(true)} onMouseOut={() => setIsButtonIconBlack(false)}> */}
-                    <button type="submit" className="form-search__button" >
+                    <button type="submit" className="form-search__button" onMouseOver={() => setIsButtonIconBlack(true)} onMouseOut={() => setIsButtonIconBlack(false)}>
+                    {/* <button type="submit" className="form-search__button" > */}
                         <div className={`form-search__button-image ${isButtonIconBlack && "form-search__button-image_alt"}`}></div>
                         <span className="form-search__button-text">искать</span>
                     </button>
                 </div>
             </form >
             <div className="results-container">
-                {/* <PlayList playList={playList} /> */}
+                <PlayList playList={playList} />
                 <AuthorList authorList={authorList} />
             </div>
         </section>
