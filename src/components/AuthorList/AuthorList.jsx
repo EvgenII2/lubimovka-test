@@ -1,4 +1,4 @@
-import AuthorsItem from '../AuthorsItem/AuthorsItem';
+import AuthorItem from '../AuthorItem/AuthorItem';
 import './AuthorList.css';
 
 function AuthorList(props) {
@@ -30,7 +30,7 @@ function AuthorList(props) {
     return (
         <ul className="authorlist">
             {lettersAndAuthors.map(item =>
-                (<AuthorsItem author={item} key={item.letter} />))}
+                (<AuthorItem author={item} key={item.letter} />))}
         </ul>
     )
 }
