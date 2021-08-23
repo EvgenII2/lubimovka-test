@@ -1,11 +1,10 @@
 .playlist {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     column-gap: 29px;
     row-gap: 20px;
     padding: 0;
     margin: 0;
+    margin-right: auto;
 }

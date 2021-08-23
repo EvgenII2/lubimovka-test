@@ -11,3 +11,10 @@
     font-weight: normal;
     src: url('../fonts/NeueMachina-Regular.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/NeueMachina-Light.woff2') format('woff2');
+}

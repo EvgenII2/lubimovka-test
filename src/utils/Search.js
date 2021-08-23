@@ -1,6 +1,7 @@
 import data from '../data/data.json';
 
 class Search {
+
     constructor(data) {
         this.data = data;
     }

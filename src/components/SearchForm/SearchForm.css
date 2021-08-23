@@ -1,12 +1,12 @@
 .section-search {
-    padding-top: 189px;
-    padding-left: 118px;
+    padding: 189px 118px 187px;
     background-color: #ecebe8;
 }
 
 .results-container {
     display: flex;
     flex-direction: row;
+    margin: auto;
 }
 
 .form-search {

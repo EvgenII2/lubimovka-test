@@ -1,0 +1,27 @@
+.authorlist__letter {
+    font-family: 'Neue Machina', Courier, monospace;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1%;
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+.authorlist__author {
+    font-family: 'Neue Machina', Courier, monospace;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -1%;
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+}
+
+.authorlist__author:last-of-type {
+    margin-bottom: 0px;
+}
+
+.authorlist__author-container{
+    margin-bottom: 61px;
+}

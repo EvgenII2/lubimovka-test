@@ -27,25 +27,25 @@ function SearchForm(props) {
             });
             setAuthorList(tmpAuthors);
             if (tmpPlays.length > 0 || tmpAuthors.length > 0)
-                setFormTitle(`По запросу ${requery} мы нашли`);
+                setFormTitle(`По запросу «${requery}» мы нашли`);
             else
-                setFormTitle(`По запросу ${requery} мы ничего не нашли`);
+                setFormTitle(`По запросу «${requery}» мы ничего не нашли`);
         }
     }, [requery])
 
-    function handleSubmit(event) {
+    function onSubmit(event) {
         event.preventDefault();
         setRequery(ref.current.value);
     }
 
     return (
         <section className="section-search">
-            <form name="formSearch" className="form-search" onSubmit={handleSubmit}>
+            <form name="formSearch" className="form-search" onSubmit={onSubmit}>
                 <h2 className="form-search__title">{formTitle}</h2>
                 <div className="form-search__input-and-button-container">
                     <input type="text" ref={ref} name="inputFromFormSearch" id="inputFromFormSearch" className="form-search__input" required minLength="1" maxLength="40" placeholder="Запрос" />
                     <button type="submit" className="form-search__button" onMouseOver={() => setIsButtonIconBlack(true)} onMouseOut={() => setIsButtonIconBlack(false)}>
-                    {/* <button type="submit" className="form-search__button" > */}
+                        {/* <button type="submit" className="form-search__button" > */}
                         <div className={`form-search__button-image ${isButtonIconBlack && "form-search__button-image_alt"}`}></div>
                         <span className="form-search__button-text">искать</span>
                     </button>

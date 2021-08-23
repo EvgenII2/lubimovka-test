@@ -9,13 +9,38 @@
     height: 300px;
     width: 240px;
     background-color: #B7C09D;
-    padding: 24px 31px 0 24px;
+    padding: 24px 31px 31px 24px;
+    margin-bottom: 16px;
 }
 
-.play__title {}
+.play__title {
+    font-family: 'Neue Machina', Courier, monospace;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
 
-.play__lastname {}
+.play__name {
+    font-family: 'Neue Machina', Courier, monospace;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
 
-.play__firstname {}
+.play__name:last-of-type {
+    margin-bottom: 14px;
+}
 
-.play__year {}
+.play__city-and-year {
+    font-family: 'Neue Machina', Courier, monospace;
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
