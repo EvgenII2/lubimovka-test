@@ -1,6 +1,6 @@
-import './AuthorsItem.css';
+import './AuthorItem.css';
 
-function AuthorsItem(props) {
+function AuthorItem(props) {
 
     const data = props.author;
 
@@ -16,4 +16,4 @@ function AuthorsItem(props) {
     )
 }
 
-export default AuthorsItem;
+export default AuthorItem;
