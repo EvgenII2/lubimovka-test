@@ -14,19 +14,15 @@ function AuthorList(props) {
                     && (item.authors.every(author => {
                         return (author.author_firstName !== b.author_firstName ||
                             author.author_lastName !== b.author_lastName)
-                    })))
+                    }))) {
                     item.authors.push(b);
+                    item.authors.sort((a, b) => a.author_lastName.localeCompare(b.author_lastName))
+                }
             })
         }
         return a;
-    }, []);
-    // Сортировку можно делать при push
-    lettersAndAuthors.sort((a, b) => {
-        if (a.letter > b.letter) return 1;
-        if (a.letter === b.letter) return 0;
-        return -1;
-    });
-    // TODO: сортировка по фамилии внутри каждой буквы
+    }, []).sort((a, b) => a.letter.localeCompare(b.letter));
+
     return (
         <ul className="authorlist">
             {lettersAndAuthors.map(item =>
